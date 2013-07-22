@@ -84,6 +84,35 @@ node default {
     ]:
   }
 
+  include hub
+
+  include postgresql
+  postgresql::db { 'mydb': }
+
+  include sublime_text_2
+  sublime_text_2::package { 
+    'Emmet': source => 'sergeche/emmet-sublime',
+    'Theme - Soda': source => 'buymeasoda/soda-theme',
+    'Package Control': source => 'wbond/sublime_package_control'
+  }
+
+  include heroku
+  include foreman
+  include redis
+  include chrome
+  include libtool
+  include ghostscript
+  include zsh
+  
+  include phantomjs
+  phantomjs::version{ '1.9.0': }
+  include phantomjs::1_9_0
+  
+  include wkhtmltopdf
+  include memcached
+  include imagemagick
+  include mongodb
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir

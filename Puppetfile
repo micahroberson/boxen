@@ -36,3 +36,20 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "hub",        "1.0.3"
+github "postgresql", "2.0.0"
+github "sysctl",     "1.0.0"
+github "sublime_text_2", "1.1.2"
+github "heroku",     "2.0.0"
+github "foreman",    "1.0.0"
+github "redis",      "1.0.0"
+github "chrome",     "1.1.1"
+github "libtool",    "1.0.0"
+github "ghostscript","1.0.0"
+github "zsh",        "1.0.0"
+github "phantomjs",  "2.0.2"
+github "wkhtmltopdf","1.0.0"
+github "memcached",  "1.2.0"
+github "imagemagick","1.2.1"
+github "mongodb",    "1.0.4"
