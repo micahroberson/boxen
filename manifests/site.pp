@@ -84,6 +84,22 @@ node default {
     ]:
   }
 
+  include postgresql
+  postgresql::db { 'mydb': }
+
+  include heroku
+  include foreman
+  include redis
+  include libtool
+  include ghostscript
+  
+  include phantomjs
+  
+  include wkhtmltopdf
+  include memcached
+  include imagemagick
+  include mongodb
+
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
